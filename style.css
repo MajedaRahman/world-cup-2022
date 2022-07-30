@@ -81,11 +81,11 @@ main {
 
 .nav-bar {
     background-color: #161616;
-    width: 246px;
-    height: 250px;
+    width: 300px;
+    height: 245px;
     border-radius: 10px;
     color: black;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -96,9 +96,9 @@ main {
 .empty-button {
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 17px 0;
+    padding: 17px 0px;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-align: center;
     color: #161616;
     font-weight: 500;
@@ -121,9 +121,9 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 24px;
-    column-gap: 24px;
-    margin-left: 24px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 10px;
     margin-bottom: 130px;
     font-family: 'Lobster', cursive;
     font-family: 'Poppins', sans-serif;
@@ -154,7 +154,9 @@ main {
     font-weight: 600;
 }
 
-.blog-image {}
+.blog-image {
+    width: 100%;
+}
 
 .blog-info {
     display: flex;
@@ -203,4 +205,19 @@ hr {
     display: inline-block;
     margin-top: 50px;
     padding-right: 50px;
+}
+
+.social-media {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-twitter {
+    font-size: 25px;
+    margin: 0 15px;
 }
