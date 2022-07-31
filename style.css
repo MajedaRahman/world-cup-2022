@@ -239,8 +239,12 @@ hr {
     }
 
     .banner-info h1 {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 55px;
+    }
+
+    .banner-info p {
+        padding-right: 10px;
     }
 
     .banner-image {
