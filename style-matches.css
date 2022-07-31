@@ -9,25 +9,37 @@ body {
     align-items: center;
 }
 
+/* Banner button animation */
+@keyframes b-button {
+    from {
+        font-size: 8px;
+    }
+
+    to {
+        font-size: 20px;
+    }
+}
+
 /* Banner-Start */
 
 .banner {
     background-color: #161616;
+    width: 86%;
     border-radius: 30px;
     height: 646px;
     margin: 50px 139px 130px 140px;
     display: flex;
+    padding-left: auto;
+    padding-top: auto;
 }
 
 .banner-info {
     color: #FFFFFF;
-    width: 531px;
-    height: 100px;
+    width: auto;
+    height: auto;
     font-family: 'Lobster', cursive;
     font-family: 'Poppins', sans-serif;
-    padding-left: 106px;
-    padding-top: 111px;
-    /* padding: 111px 0 111px 106px; */
+    padding: 111px 0 0 95px;
     margin: 0px;
 }
 
@@ -42,6 +54,7 @@ body {
     font-size: 16px;
     margin-bottom: 50px;
     font-weight: 400;
+    padding-right: 30px;
 }
 
 .banner-button {
@@ -53,6 +66,10 @@ body {
     color: #FFFFFF;
     margin-bottom: 111px;
     font-weight: 400;
+    animation-name: b-button;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 .fa-angle-right {
@@ -74,7 +91,7 @@ body {
 
 main {
     display: flex;
-    width: 1257px;
+    width: 86%;
 }
 
 /* Navigation Bar */
@@ -119,7 +136,7 @@ main {
 /* Blog Details */
 
 .upcoming-matches {
-    width: 100%;
+    width: ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 15px;
@@ -131,7 +148,7 @@ main {
 }
 
 .upcoming-match {
-    width: 312px;
+    width: 280px;
     border: solid 1px silver;
     border-radius: 10px;
     padding: 50px 15px;
