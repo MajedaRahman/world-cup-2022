@@ -4,7 +4,7 @@
 /* Common-Styles */
 body {
     margin: 0 auto;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,21 +14,22 @@ body {
 
 .banner {
     background-color: #161616;
+    width: 86%;
     border-radius: 30px;
     height: 646px;
     margin: 50px 139px 130px 140px;
     display: flex;
+    padding-left: auto;
+    padding-top: auto;
 }
 
 .banner-info {
     color: #FFFFFF;
-    width: 531px;
-    height: 100px;
+    width: auto;
+    height: auto;
     font-family: 'Lobster', cursive;
     font-family: 'Poppins', sans-serif;
-    padding-left: 106px;
-    padding-top: 111px;
-    /* padding: 111px 0 111px 106px; */
+    padding: 111px 0 0 95px;
     margin: 0px;
 }
 
@@ -43,6 +44,7 @@ body {
     font-size: 16px;
     margin-bottom: 50px;
     font-weight: 400;
+    padding-right: 30px;
 }
 
 .banner-button {
@@ -119,7 +121,7 @@ main {
 /* Blog Details */
 
 .blogs {
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
@@ -131,7 +133,7 @@ main {
 }
 
 .blog {
-    width: 312px;
+    width: 311px;
     border: solid 1px silver;
     border-radius: 10px;
 }
@@ -156,7 +158,7 @@ main {
 }
 
 .blog-image {
-    width: 100%;
+    width: 280px;
 }
 
 .blog-info {
@@ -184,7 +186,6 @@ footer {
     font-family: 'Poppins', sans-serif;
     padding: 130px 0;
     text-align: center;
-
 }
 
 .footer-text p {
@@ -224,6 +225,7 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
+
     .banner {
         flex-direction: column;
         height: auto;
@@ -232,16 +234,17 @@ hr {
     }
 
     .banner-info {
-        padding: 10%;
+        padding: 10% 20%;
         text-align: center;
     }
 
     .banner-info h1 {
         font-size: 40px;
+        line-height: 55px;
     }
 
     .banner-image {
-        padding-top: 210px;
+        /* padding-top: 210px; */
         height: auto;
         width: auto;
         padding-left: 90px;
@@ -260,8 +263,9 @@ hr {
 
     .empty-button {
         border: solid 1px lightgray;
-        padding: ;
         font-weight: 600;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .blogs {
@@ -274,6 +278,8 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-left: 50px;
     }
 
 }
