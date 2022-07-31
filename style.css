@@ -10,6 +10,17 @@ body {
     align-items: center;
 }
 
+/* Banner button animation */
+@keyframes b-button {
+    from {
+        font-size: 8px;
+    }
+
+    to {
+        font-size: 20px;
+    }
+}
+
 /* Banner-Start */
 
 .banner {
@@ -56,6 +67,10 @@ body {
     color: #FFFFFF;
     margin-bottom: 111px;
     font-weight: 400;
+    animation-name: b-button;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 .fa-angle-right {
