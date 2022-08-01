@@ -172,7 +172,7 @@ main {
 }
 
 .blog-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -252,7 +252,10 @@ hr {
 .fa-twitter {
     font-size: 25px;
     margin: 0 15px;
+    color: #fffffff9;
 }
+
+/* For Mobile devices */
 
 @media screen and (max-width: 767px) {
 
@@ -261,6 +264,7 @@ hr {
         height: auto;
         margin-bottom: 20px;
         align-items: center;
+        padding-right: 10px;
     }
 
     .banner-info {
@@ -278,7 +282,6 @@ hr {
     }
 
     .banner-image {
-        /* padding-top: 210px; */
         height: auto;
         width: auto;
         padding-left: 90px;
@@ -318,14 +321,12 @@ hr {
 
 }
 
+/* For Tablets */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
 
     .banner {
-        width: 100%;
+        width: 95%;
         margin-bottom: 80px;
     }
 
@@ -353,46 +354,44 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 95%;
     }
 
     .nav-bar {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         background-color: #FFFFFF;
         width: auto;
         height: auto;
         font-size: 30px;
-        /* padding: 25px; */
     }
 
     .empty-button {
         border: solid 1px lightgray;
         margin-right: 30px;
         font-weight: 500;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 20px;
     }
 
     .filled-button {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 90px;
+        padding-left: 90px;
         height: 100%;
-
+        font-size: 20px;
     }
 
     .blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
-        /* column-gap: 12px; */
-        width: 40%;
-        padding-right: 46.5%;
-        padding-left: 8.5%;
+        column-gap: 30px;
         margin-bottom: 60px;
-    }
-
-    .blog {
-        width: 95%;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
     }
 
     .blog-display {
@@ -400,12 +399,13 @@ hr {
     }
 
     .blog-image {
-        width: 492px;
+        max-width: 100%;
         height: auto;
+        margin: 0;
     }
 
     .blog-details {
-        padding: 20px 0 0 30px;
+        padding: 30px 0 0 30px;
     }
 
     .blog-highlight {
@@ -440,21 +440,4 @@ hr {
     .button-display {
         display: block;
     }
-
-    /*
-
-.blog-image {
-    width: 280px;
-}
-
-
-.blog-duration {
-    margin-right: 30px;
-}
-
-.fa-clock,
-.fa-comment-dots {
-
-    color: #161616B2;
-}  */
 }

@@ -20,7 +20,7 @@ body {
     }
 }
 
-/* Banner-Start */
+/* Banner Style */
 
 .banner {
     background-color: #161616;
@@ -83,7 +83,7 @@ body {
     padding-right: 79px;
 }
 
-/* Banner-End */
+/* Banner Style End */
 
 /*--------------------
         Main-Start 
@@ -94,7 +94,7 @@ main {
     width: 86%;
 }
 
-/* Navigation Bar */
+/* Navigation Bar  */
 
 .nav-bar {
     background-color: #161616;
@@ -222,4 +222,172 @@ hr {
 .fa-twitter {
     font-size: 25px;
     margin: 0 15px;
+    color: #fffffff9;
+}
+
+/* For Mobile devices */
+
+@media screen and (max-width: 767px) {
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .banner-info {
+        padding: 10% 20%;
+        text-align: center;
+    }
+
+    .banner-info h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .banner-info p {
+        padding-right: 10px;
+    }
+
+    .banner-image {
+        /* padding-top: 210px; */
+        height: auto;
+        width: auto;
+        padding-left: 90px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar {
+        background-color: #FFFFFF;
+        width: auto;
+    }
+
+    .empty-button {
+        border: solid 1px lightgray;
+        font-weight: 600;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .filled-button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .upcoming-matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .footer-nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+}
+
+/* For Tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .banner {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .banner-info {
+        width: 50%;
+        padding: 8% 0 8% 8%;
+    }
+
+    .banner-info h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner-info p {
+        padding-right: 5px;
+    }
+
+    .banner-image {
+        height: 90%;
+        width: 90%;
+        padding: 65px 35px 0 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        width: auto;
+        height: auto;
+        font-size: 30px;
+        /* padding: 25px; */
+    }
+
+    .empty-button {
+        border: solid 1px lightgray;
+        margin-right: 30px;
+        font-weight: 500;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        font-size: 20px;
+    }
+
+    .filled-button {
+        padding-right: 30px;
+        padding-left: 30px;
+        height: auto;
+        font-size: 20px;
+        margin-right: 30px;
+
+    }
+
+    .upcoming-matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        margin-bottom: 60px;
+    }
+
+    .upcoming-match {
+        padding: 45px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .footer-nav-bar {
+        margin-left: 60px;
+        margin-right: 40px;
+        padding-right: 5px;
+    }
+
 }
