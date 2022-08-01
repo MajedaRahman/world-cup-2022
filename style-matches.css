@@ -300,15 +300,9 @@ hr {
 /* For Tablets */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* body {
-        padding-left: 5%;
-        padding-right: 5%;
-    } */
 
     .banner {
         width: 90%;
-        /* margin-left: 5%;
-        margin-right: 5%; */
         margin-bottom: 80px;
     }
 
